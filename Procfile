@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run iris_dataset.py
+web: sh setup.sh && streamlit run titanic_app.py
