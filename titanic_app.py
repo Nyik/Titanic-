@@ -22,13 +22,13 @@ image = Image.open('img/titanic2.jpg')
 st.image(image, use_column_width=True)
 
 st.write("""
-*The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis*
+*RMS Titanic was a British passenger liner operated by the White Star Line that sank in the North Atlantic Ocean on 15 April 1912, after striking an iceberg during her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making the sinking at the time the deadliest of a single ship in the West and the deadliest peacetime sinking of a superliner or cruise ship to date. With much public attention in the aftermath the disaster has since been the material of many artistic works and a founding material of the disaster film genre.*
 
-*Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.*  
+*Data has been collected about the passengers and certain information or features can determine if you live or die .*  
 
-For more information [Wikipedia](https://en.wikipedia.org/wiki/Iris_flower_data_set).
+For more information [Wikipedia](https://en.wikipedia.org/wiki/Titanic).
 
-You will now get to see which features get which flower(Versicolor,Setosa,Virginica) with the sliders in the sidebar 
+You will now get to see which features get which outcome(Dead,Alive) with the sliders in the sidebar 
 """)
 
 st.sidebar.header('User Input Parameters')
@@ -116,9 +116,9 @@ st.subheader('Prediction')
 doa = np.array(['Dead','Alive',])
 st.write(doa[prediction])
 if doa[prediction] == 'Dead':
-    st.write("I guess you will be following Jack at the bottom of the Sea. Say Hi to Spongebob")
+    st.write("I guess you will be following Jack at the bottom of the Sea")
 else:
-    st.write("You probably survived telling school kids about the time you almost died . Guessing you dont want drink with ice in them now ")
+    st.write("You probably lived to tell the tale. ")
 
 # st.write(iris_species[prediction][0])
 
